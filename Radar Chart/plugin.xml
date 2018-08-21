@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.radarChartPlugin"
+		name="Radar Chart Plugin"
+		description="Sample plugin for generating Radar Chart"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.radarChartPlugin.RadarChartPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.radarChartPlugin.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.radarChartPlugin.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.radarChartPlugin.actionset1.RadarChartActionControl"
+					actionType="generalAction"
+      		name="Radar Chart Plugin"
+		      description="Sample plugin for generating Radar Chart"
+					style="normal"
+          icon="icon/plugin_icon.png"
+          tooltip="Radar Chart"
+					toolbarPath="com.vp.plugin.sample.radarChartPlugin.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.radarChartPlugin.RadarChartAction"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
